@@ -1,20 +1,21 @@
 {
   "compilerOptions": {
-    "types": ["node"],
-    "target": "ESNext",
-    "module": "ESNext",
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
     "jsx": "react-jsx",
-    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["src"]
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"],
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true,  // ✅ Prevents TypeScript from emitting JS files
+    "skipLibCheck": true, // ✅ Faster builds, avoids issues with `.d.ts` files
+    "isolatedModules": true // ✅ Required for Babel TypeScript (no type-checking)
+  }
 }
