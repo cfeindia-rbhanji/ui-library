@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
     "shadcn": "^2.1.8",
     "tailwind-merge": "^2.5.4",
     "tailwind-variants": "^1.0.0"
@@ -59,6 +61,7 @@
     "@types/node": "^24.0.1",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.3.1",
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.5",
